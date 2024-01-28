@@ -3,9 +3,9 @@
 
 function add(number1, number2){
     // let sum = number1 + number2
-    let number1 = 3
-    let number2 = 5
+    // let number1 = 3
+    // let number2 = 5
     return number1 + number2
 }
 
-// console.log(add());
+console.log(add(3,5));
