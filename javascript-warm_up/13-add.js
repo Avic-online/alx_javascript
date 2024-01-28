@@ -2,7 +2,7 @@
 // a javascript function to add number
 
 function add(number1, number2){
-    let sum = number1 + number2;
+    const sum = number1 + number2;
     return sum;
 }
 
