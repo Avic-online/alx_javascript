@@ -7,4 +7,3 @@ let language3 = "JavaScript is amazing"
 console.log(language1)
 console.log(language2)
 console.log(language3)
-// cons
