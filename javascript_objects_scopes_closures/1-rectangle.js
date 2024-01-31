@@ -1,5 +1,6 @@
 #!/usr/bin/node
-// a class that takes the width and height of a rectangle and initializes its instance
+// a class that takes the width and height
+// of a rectangle and initializes its instance
 
 module.exports = class Rectangle {
     constructor(w, h) {
