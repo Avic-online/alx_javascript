@@ -2,6 +2,8 @@
 // this code only writes am empty class rectangle
 
 class Rectangle {
+    myFunction() {
+        
+    }
 
-    
 }
