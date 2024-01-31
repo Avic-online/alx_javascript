@@ -2,7 +2,7 @@
 // a class that takes the width and height of a rectangle and initializes its instance
 
 module.exports = class Rectangle {
-    myFunction(w, h) {
+    constructor(w, h) {
         this.width = w;
         this.height = h;
     };
