@@ -5,9 +5,9 @@ module.exports = class Rectangle {
     myFunction(w, h) {
         this.width = w;
         this.height = h;
-    }
+    };
 
-}
+};
 
 // const r1 = new Rectangle(2, 3);
 // console.log(r1);
