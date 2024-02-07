@@ -1,0 +1,25 @@
+{
+  "name": "alx_javascript",
+  "version": "1.0.0",
+  "description": "for my alx javascript project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Avic-online/alx_javascript.git"
+  },
+  "keywords": [
+    "1234"
+  ],
+  "author": "Avic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Avic-online/alx_javascript/issues"
+  },
+  "homepage": "https://github.com/Avic-online/alx_javascript#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
