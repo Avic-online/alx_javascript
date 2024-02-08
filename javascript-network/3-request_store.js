@@ -9,8 +9,10 @@ if (process.argv.length !== 4) {
     process.exit(1);
 }
 
-const url = process.argv[2];
-const filePath = process.argv[3];
+// const url = process.argv[2];
+const url = 'https://html.com/'
+// const filePath = process.argv[3]
+const filePath = 'Documents/repo'
 
 // Make a request to the specified URL
 request(url, (error, response, body) => {
