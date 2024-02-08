@@ -3,9 +3,9 @@
 
 const request = require('request')
 
-const endpoint = 'https://jsonplaceholder.typicode.com/todos'
+// const endpoint = 'https://jsonplaceholder.typicode.com/todos'
 
-request(endpoint, function(error, response, body) {
+request(process.argv[2], function(error, response, body) {
     if (!error) {
         const todos = JSON.parse(body)
         let completed = {}
