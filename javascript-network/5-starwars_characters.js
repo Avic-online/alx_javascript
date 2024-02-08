@@ -11,7 +11,6 @@ if (process.argv.length !== 3) {
 const movieId = process.argv[2];
 const apiUrl = `https://swapi.dev/api/films/${movieId}/`;
 
-// Make a request to the Star Wars API to get movie details
 request(apiUrl, (error, response, body) => {
     if (error) {
         console.error('Error:', error);
@@ -23,10 +22,9 @@ request(apiUrl, (error, response, body) => {
         process.exit(1);
     }
 
-    // Parse the JSON response
     const movie = JSON.parse(body);
 
-    // Display characters' names one by line
+    // lets display characters here by their name
     console.log(`Characters in ${movie.title}:`);
     movie.characters.forEach((characterUrl) => {
         request(characterUrl, (characterError, characterResponse, characterBody) => {
