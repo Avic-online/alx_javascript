@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Avic-online/alx_javascript#readme",
   "dependencies": {
+    "axios": "^1.6.7",
     "request": "^2.88.2"
   }
 }
