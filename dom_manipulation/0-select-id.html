@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Introduction</title>
+</head>
+<body>
+  <p id="myParagraph">This is a paragraph.</p>
+  <script>
+
+    var paraElement = document.getElementById("myParagraph");
+
+    // using the if-else conditional statement to check if the element is found
+
+    if (paraElement) {
+        // this will change the paragraph content
+        paraElement.textContent = "I successfully updated this with Javascript.";
+    } else {
+        console.error("Element with id 'myParagragh' not found.");
+    }
+   </script>
+</body>
+</html>
