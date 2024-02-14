@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creating and Removing Elements</title>
+</head>
+<body>
+  <div id="container">
+    <p>This is the first content before JS modification</p>
+  </div>
+  <button id="toggleButton">Paragraph Toggler</button>
+
+  <script>
+    // assigning variables and modifying paragraph
+    var containerDiv = document.getElementById('container');
+    var newP = document.createElement('p');
+    newP.textContent = "New Paragraph";
+    
+    // appending the new paragraph to the container div
+    containerDiv.appendChild(newP);
+
+    // assigning a variable to the toggle button by getting its element by id
+    var toggleButton = document.getElementById('toggleButton');
+
+    // adding a click event to the toggle button
+    toggleButton.addEventListener('click', function() {
+        // toggling the visibility of the new paragraph
+        newP.style.display = (newP.style.display === 'none' || newP.style.display === '') ? 'block' : "none";
+    });
+
+  </script>
+</body>
+</html>
