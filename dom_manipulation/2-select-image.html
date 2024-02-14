@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modifying Elements</title>
+  <style>
+    img {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <img id="myImage" src="https://picsum.photos/200/300" alt="My Image">
+
+  <script>
+
+    var myImageModify = document.getElementById('myImage');
+
+    if (myImageModify) {
+        myImageModify.src = "https://picsum.photos/200/301";
+        myImageModify.alt = "New Image";
+        myImageModify.stye.border = "2px solid red";
+    } else {
+        console.error('ELement with is myImage not found, check your code again');
+    }
+
+  </script>
+</body>
+</html>
