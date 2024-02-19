@@ -4,13 +4,30 @@
   <title>Creating and Removing Elements</title>
 </head>
 <body>
-    <input type="text" placeholder="Firstname" name="fName" required>
-    <input type="text" placeholder="email" name="email" required>
+    <input id="FirstName" type="text" placeholder="Firstname" name="fName" required>
+    <input id="EmailLead" type="text" placeholder="email" name="email" required>
     <button onclick="setCookies()">Log me in</button>
     <button onclick="setCookies()">Show the cookies</button>
 
     <script>
-        
+
+        function setCookies() {
+            var fNameValue = document.getElementById('FirstName').value;
+            var emailValue = document.getElementById('EmailLead').value;
+
+            document.cookie = FirstName='fname=${fNameValue}';
+            document.cookie = EmailLead='email=${emailValue}';
+
+            alert('Cookies set successfully!.');
+        }
+
+        function showCookies () {
+            var para = document.createElement('p')
+            var cookies = document.cookie;
+            paragraph.innerHTML = 'Cookies: ${cookies}';
+            document.body.appendChild(paragraph);
+        }
+
     </script>
 </body>
 </html>
