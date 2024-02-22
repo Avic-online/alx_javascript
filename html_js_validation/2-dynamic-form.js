@@ -7,7 +7,7 @@ function generateInputFields(selectedValue) {
             var inputField = document.createElement('input');
             inputField.type = 'text';
             inputField.name = 'field' + i;
-            inputField.placeholder = i;
+            inputField.placeholder = 'field' + i;
 
             inputContainer.appendChild(inputField);
 
@@ -23,9 +23,10 @@ function validateForm() {
 
     for (var i = 0; i < inputFields.length; i++) {
         if (inputFields[i].value ==='') {
-            displayError("Please fill in all fields");
+            alert("Please fill in all fields");
             return false;
         }
+        alert('input successfully submitted!')
     }
 
     return true;
