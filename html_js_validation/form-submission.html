@@ -14,7 +14,7 @@
   <label for="password">Password:</label>
   <input type="password" id="password" name="password" onkeyup="validatePassword()" required>
   <!-- Add more form fields as needed -->
-  <button type="submit">Submit</button>
+  <button type="submit" onclick="return handleFormSubmit(event)">Submit</button>
 
   <p id="error" style="color: red;"></p>
   <p id="success" style="color: red;"></p>
