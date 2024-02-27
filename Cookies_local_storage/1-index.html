@@ -15,10 +15,16 @@
             var fNameValue = document.getElementById('FirstName').value;
             var emailValue = document.getElementById('EmailLead').value;
 
-            document.cookie = 'FirstName=' + fNameValue.value;
-            document.cookie = 'EmailLead=' + emailValue.value;
+            // Setting cookies with expiration in 10 days
+            var expirationDate = new Date();
+            expirationDate.setDate(expirationDate.getDate() + 10);
+            var expirationDate = new Date();
+            expirationDate.setDate(expirationDate.getDate() + 10);
 
-            alert('Cookies set successfully!.');
+            document.cookie = 'FirstName=' + fNameValue.value + '; expires:' + expirationDate.toUTCString();
+            document.cookie = 'EmailLead=' + emailValue.value + '; expires:' + expirationDate.toUTCString();
+
+            // alert('Cookies set successfully!.');
         }
 
         function showCookies () {
