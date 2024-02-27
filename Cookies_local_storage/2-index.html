@@ -59,7 +59,22 @@
             // alert('Cookies set successfully!.');
         }
 
+        function getCookie(name) {
+            var cookies = document.cookie.split(';');
+
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim().split('=');
+                if (cookie[0] === name) {
+                    return cookie[1];
+                }
+            }
+            return "";
+        }
+
         function showCookies () {
+            var emailValue = getCookie("EmailLead");
+            var firstnameValue = getCookie("FirstName");
+
             var para = document.createElement('p')
 
             // to retrieve cookies
@@ -67,12 +82,15 @@
             var cookiesText = "Cookies: ";
             
             // to display cookies
-            for (var i = 0; i < cookies.length; i++) {
-                cookiesText += cookies[i].trim() + ', ';
-            }
+
+            // for (var i = 0; i < cookies.length; i++) {
+            //     cookiesText += cookies[i].trim() + ', ';
+            // }
+
+            Para.innerHTML = "Email: " + emailValue + " - Firstname: " + firstnameValue;
 
             // Setting the inner HTML with the value of the cookies
-            para.innerHTML = cookiesText.slice(0, -2);
+            // para.innerHTML = cookiesText.slice(0, -2);
 
             // Appending the paragraph at the bottom of the page
             document.body.appendChild(para);

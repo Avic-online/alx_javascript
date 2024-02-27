@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Creating and Removing Elements</title>
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <title>Cookies Project</title>
+
+  <style>
+    body{
+        margin-top:10%;
+    }
+
+    hi{
+        font-family: 'sans-serif';
+        font-weight: bold;
+        font-size: 3rem;
+    }
+
+    input {
+        padding: 10px;
+    }
+
+    .input-group {
+        position: relative;
+    }
+
+  </style>
 </head>
 <body>
-    <input id="FirstName" type="text" placeholder="Firstname" name="fName" required>
-    <input id="EmailLead" type="text" placeholder="email" name="email" required>
-    <button onclick="setCookies()">Log me in</button>
+    <h1>Login to the website</h1>
+    <div class="hero">
+        <form>
+            <div class="input-group">
+                <input id="FirstName" type="text" placeholder="Firstname" name="fName" required>
+                <input id="EmailLead" type="text" placeholder="email" name="email" required>
+                <button onclick="setCookies()">Log me in</button>
+            </div>
+        </form>
+    </div>
+    <h1>Cookies</h1>
     <button onclick="showCookies()">Show the cookies</button>
 
+    <!-- javascripting here -->
     <script>
 
         function setCookies() {
@@ -34,10 +66,10 @@
             }
 
             // Setting the inner HTML with the value of the cookies
-            paragraph.innerHTML = cookiesText.slice(0, -2);
+            para.innerHTML = cookiesText.slice(0, -2);
 
             // Appending the paragraph at the bottom of the page
-            document.body.appendChild(paragraph);
+            document.body.appendChild(para);
         }
 
     </script>
